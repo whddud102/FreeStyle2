@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="정렬옵션" app:showAsAction="always"/>
+    <item android:title="포지션" android:id="@+id/position"/>
+    <item android:title="이름" android:id="@+id/menuName"/>
+    <item android:title="2점슛" android:id="@+id/menu2Point"/>
+    <item android:title="3점슛" android:id="@+id/menu3Point"/>
+    <item android:title="덩크슛" android:id="@+id/menuDunk"/>
+    <item android:title="레이업" android:id="@+id/menuLayUp"/>
+    <item android:title="패스" android:id="@+id/menuPass"/>
+    <item android:title="드리블" android:id="@+id/menuDribble"/>
+    <item android:title="리바운드" android:id="@+id/menuRebound"/>
+    <item android:title="블록샷" android:id="@+id/menuBlock"/>
+    <item android:title="몸싸움" android:id="@+id/menuPhysical"/>
+    <item android:title="점프" android:id="@+id/menuJump"/>
+    <item android:title="스틸" android:id="@+id/menuSteal"/>
+    <item android:title="달리기" android:id="@+id/menuSpeed"/>
+    <item android:title="종합" android:id="@+id/menuTotal"/>
+</menu>

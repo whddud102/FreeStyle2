@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tvSearch" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:hint="선수 이름으로 검색"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/gridView"
+        android:background="@drawable/border" android:padding="10dp"/>
+    <GridView
+        android:layout_width="0dp"
+        android:layout_height="0dp" android:numColumns="auto_fit"
+        android:id="@+id/gridView" android:columnWidth="100dp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearch">
+    </GridView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

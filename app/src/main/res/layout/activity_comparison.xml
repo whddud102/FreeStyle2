@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComparisonActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:id="@+id/LinearLayout_Comparison">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_Image" android:weightSum="3">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/imageView"
+                    android:layout_weight="1" android:layout_height="100dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageViewLeft"
+                    android:layout_weight="1" android:background="@drawable/border"
+                    app:srcCompat="@drawable/add_person"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageViewRight"
+                    android:layout_weight="1" android:background="@drawable/border"
+                    app:srcCompat="@drawable/add_person"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_name" android:weightSum="3"
+                >
+                <TextView
+                    android:text="이름"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/name" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    tools:text="1" android:gravity="center" android:padding="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/nameLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp"
+                    tools:text="22222222222222222222222222222222222222222222222222222222222222222"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/nameRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" tools:text="233232"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_position" android:weightSum="3">
+                <TextView
+                    android:text="포지션"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/position" android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:background="@drawable/textview_border"
+                    android:gravity="center" android:padding="1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/positionLeft" android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" android:textAlignment="center"
+                    android:background="@drawable/border" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/positionRight" android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" android:textAlignment="center"
+                    android:background="@drawable/border" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_contract" android:weightSum="3">
+                <TextView
+                    android:text="계약"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/contract" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/contractLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/contractRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_2point" android:weightSum="3">
+                <TextView
+                    android:text="2점슛"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/twoPoint" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/twoPointLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/twoPointRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_3point" android:weightSum="3">
+                <TextView
+                    android:text="3점슛"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/threePoint" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/threePointLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/threePointRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_dunk" android:weightSum="3">
+                <TextView
+                    android:text="덩크슛"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dunk" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dunkLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dunkRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_layUp" android:weightSum="3">
+                <TextView
+                    android:text="레이업"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/layUp" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/layUpLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/layUpRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_pass" android:weightSum="3">
+                <TextView
+                    android:text="패스"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/pass" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/passLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/passRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_dribble" android:weightSum="3">
+                <TextView
+                    android:text="드리블"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dribble" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dribbleLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/dribbleRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_rebound" android:weightSum="3">
+                <TextView
+                    android:text="리바운드"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/rebound" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/reboundLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/reboundRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_block" android:weightSum="3">
+                <TextView
+                    android:text="블록샷"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/block" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/blockLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/blockRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_physical" android:weightSum="3">
+                <TextView
+                    android:text="몸싸움"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/physical" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/physicalLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/physicalRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_jump" android:weightSum="3">
+                <TextView
+                    android:text="점프"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/jump" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/jumpLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/jumpRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_steal" android:weightSum="3">
+                <TextView
+                    android:text="스틸"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/steal" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/stealLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/stealRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_speed" android:weightSum="3">
+                <TextView
+                    android:text="달리기"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/speed" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/speedLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/speedRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_total" android:weightSum="3">
+                <TextView
+                    android:text="종합"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/total" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/totalLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="1231 (+1721)"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/totalRight" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_ability1" android:weightSum="3">
+                <TextView
+                    android:text="특성1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability1" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability1Left" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability1Right" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_ability2" android:weightSum="3">
+                <TextView
+                    android:text="특성2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability2" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability2Left" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability2Right" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_ability3" android:weightSum="3">
+                <TextView
+                    android:text="특성3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability3" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability3Left" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ability3Right" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/layout_goldAbility" android:weightSum="3">
+                <TextView
+                    android:text="골드스킬"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/goldAbility" android:layout_weight="1"
+                    android:background="@drawable/textview_border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="1dp" android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/goldAbilityLeft" android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"
+                    tools:text="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/goldAbilityRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textAlignment="center"
+                    android:textColor="@android:color/black" android:padding="3dp" android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

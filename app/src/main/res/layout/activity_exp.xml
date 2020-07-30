@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/LinearLayout1" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.8"
+        android:id="@+id/LinearLayout5" app:layout_constraintHorizontal_bias="1">
+        <TextView
+            android:text="저용량 생수 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSmallBottle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@android:color/black"
+            android:padding="0dp"
+            tools:layout_editor_absoluteY="359dp" tools:layout_editor_absoluteX="81dp"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/tvSmallBottleNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:padding="0dp"
+            android:hint="입력" android:maxLength="4" android:inputType="number" tools:layout_editor_absoluteY="353dp"
+            tools:layout_editor_absoluteX="199dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/LinearLayout1" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.7"
+        android:id="@+id/LinearLayout4" app:layout_constraintHorizontal_bias="1">
+        <TextView
+            android:text="일반 생수 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNormalBottle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@android:color/black"
+            android:padding="0dp"
+            tools:layout_editor_absoluteY="320dp" tools:layout_editor_absoluteX="99dp"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/tvNormalBottleNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:padding="0dp"
+            android:hint="입력" android:maxLength="4" android:inputType="number" tools:layout_editor_absoluteY="314dp"
+            tools:layout_editor_absoluteX="199dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/LinearLayout1" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" android:id="@+id/LinearLayout3"
+        app:layout_constraintHorizontal_bias="1">
+        <TextView
+            android:text="대용량 생수 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBigBottle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@android:color/black"
+            android:padding="0dp"
+            tools:layout_editor_absoluteY="276dp" tools:layout_editor_absoluteX="81dp"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/tvBigBottleNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:padding="0dp"
+            android:hint="입력" tools:text="1234"
+            android:maxLength="4"
+            android:inputType="number" tools:layout_editor_absoluteY="270dp" tools:layout_editor_absoluteX="199dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/LinearLayout1" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.35"
+        android:id="@+id/LinearLayout2" app:layout_constraintHorizontal_bias="1">
+        <TextView
+            android:text="현재 경험치 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewExp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:padding="0dp" android:textColor="@android:color/black"
+            tools:layout_editor_absoluteY="160dp" tools:layout_editor_absoluteX="81dp"/>
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/tvCurrentExp"
+            android:hint="입력"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" tools:text="123124"
+            android:padding="0dp"
+            android:maxLength="5" android:inputType="number" tools:layout_editor_absoluteY="154dp"
+            tools:layout_editor_absoluteX="199dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.27" android:id="@+id/LinearLayout1"
+        app:layout_constraintHorizontal_bias="0.5">
+        <TextView
+            android:text="현재 레벨 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewLv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:padding="0dp"
+            tools:layout_editor_absoluteY="129dp" tools:layout_editor_absoluteX="99dp"/>
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTargetLv"
+            android:gravity="left"
+            android:padding="0dp"
+            tools:layout_editor_absoluteY="129dp" tools:layout_editor_absoluteX="197dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:text="보유한 생수 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@android:color/black" android:textColor="@color/colorGold" android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/title1"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.48"/>
+    <Button
+        android:text="계산하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" android:background="@android:color/black"
+        android:textColor="@color/colorGold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.95"/>
+    <TextView
+        android:text="정보 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textColor="@color/colorGold"
+        android:background="@android:color/black" android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.15"/>
+    <TextView
+        android:text="선수 경험치/팀 경험치 동일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.05"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
